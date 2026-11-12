@@ -1,28 +1,28 @@
-# Jogo da velha em Java Swing
+# Java Swing tic-tac-toe
 
-Jogo local para duas pessoas, com interface gráfica construída em Swing. O tabuleiro alterna entre X e O e verifica vitória ou empate após as jogadas.
+Local two-player game with a Swing interface. The board alternates between X and O and checks for a winner or draw after each move.
 
-## Funcionalidades
+## Features
 
-- Tabuleiro com nove botões.
-- Alternância entre os jogadores.
-- Bloqueio de casas já preenchidas.
-- Mensagem de resultado e reinício do tabuleiro.
+- Nine-button game board.
+- Alternating turns.
+- Prevents selecting occupied cells.
+- Displays the result and resets the board.
 
-## Executar
+## Run locally
 
-Requer um JDK e ambiente gráfico disponível.
+Requires a JDK and a graphical desktop environment.
 
 ```bash
 javac -encoding UTF-8 -d out src/application/Program.java src/game/HashGame.java
 java -cp out application.Program
 ```
 
-## Organização
+## Structure
 
-- `application/Program.java`: inicialização.
-- `game/HashGame.java`: interface, eventos e regras.
+- `application/Program.java`: entry point.
+- `game/HashGame.java`: interface, event handlers and rules.
 
-## Escopo
+## Scope
 
-Projeto de estudo de Java, orientação a objetos e eventos de interface. As partidas são locais; não há oponente de IA, multiplayer em rede ou persistência.
+A study project covering Java, object-oriented programming and UI events. Games are local; there is no AI opponent, network multiplayer or persistence.
